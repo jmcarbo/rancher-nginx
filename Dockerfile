@@ -6,6 +6,6 @@ ADD confd-0.11.0-linux-amd64 /usr/local/bin/confd
 RUN chmod +x /usr/local/bin/confd
 RUN mkdir -p /etc/confd/conf.d
 RUN mkdir -p /etc/confd/templates
-ADD nginx.toml /etc/confd/conf.d
-ADD nginx.tmpl /etc/confd/templates
+ADD nginx.toml /etc/confd/conf.d/nginx.toml
+ADD nginx.tmpl /etc/confd/templates/nginx.tmpl
 
